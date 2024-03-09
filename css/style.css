@@ -14,7 +14,7 @@ html {
 }
 
 .navbar {
-
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +284,8 @@ html {
         flex-direction: column;
         height: 400px;
     }
-    .logo img{
+
+    .logo img {
         width: 80%;
     }
 
