@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.logo {
+
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.nav-list {
+    padding: 10px 0px;
+    width: 60%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.nav-list li {
+
+    list-style: none;
+    padding: 10px 20px;
+
+}
+
+.nav-list li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+
+
+    color: grey;
+}
+
+.right-nav {
+    width: 40%;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+.btn-sm {
+    padding: 3px 5px;
+    border-radius: 8px;
+
+}
+
+#search {
+
+    padding: 3px;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+
+}
+
+/* firstsection  */
+.firstsection {
+
+    height: 100vh;
+}
+
+.box-main {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.text-big {
+
+    font-size: 50px;
+
+
+}
+
+.text-small {
+
+    font-size: 25px;
+}
+
+.btn {
+
+    padding: 6px 10px;
+    border: 1px solid white;
+    margin: 20px 0px;
+    font-size: 17px;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+
+
+.right {
+
+    width: 40%;
+
+}
+
+.right img {
+
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+
+}
+
+/* sec-right  */
+
+.sec-right {
+    /* height: 500px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    padding: 50px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sec-left {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    padding: 50px 0px;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.paras {
+
+
+    padding: 0 40px;
+
+}
+
+.section-subtag {
+
+    font-size: 20px;
+}
+
+.thumbnail img {
+
+    width: 250px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+/* contact */
+
+
+.contact {
+    height: 80vh;
+    background: grey;
+}
+
+.text-center {
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form {
+
+    width: 50%;
+    margin: 35px auto;
+}
+
+.form-input {
+
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: 15px 0px;
+}
+
+.btn-dark {
+    color: white;
+    border: 2px solid white;
+}
+
+.footer-text {
+
+    padding: 10px;
+    text-align: center;
+    /* font-size: 30px; */
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.burger {
+    position: absolute;
+    top: 15px;
+    right: 3%;
+    display: none;
+    cursor: pointer;
+
+}
+
+.line {
+
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 5px;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .nav-list {
+
+        flex-direction: column;
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        height: 400px;
+    }
+    .logo img{
+        width: 80%;
+    }
+
+    .right-nav {
+        text-align: center;
+        width: 50%;
+    }
+
+    #search {
+
+        width: 100%;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+
+    }
+
+    .burger {
+
+        display: block;
+
+    }
+
+    .h-nav-resp {
+        height: 60px;
+        transition: all 0.7s ease-out;
+    }
+
+    .v-class-resp {
+        visibility: hidden;
+
+    }
+
+    .sec-left {
+
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+
+
+    }
+
+    .sec-right {
+
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .paras {
+        padding: 0px 10px;
+
+    }
+
+    .form {
+        width: 66%;
+        margin: 35px auto;
+    }
+}
